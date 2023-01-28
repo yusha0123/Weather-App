@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/clouds-lg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card {
+  padding: 1.5rem;
+  color: black;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 1rem;
+}
+
+.weather-box {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../images/clouds-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
